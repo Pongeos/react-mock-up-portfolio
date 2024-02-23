@@ -1,0 +1,36 @@
+.number_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0085FF;
+    height: 300px;
+    margin-top: 60px;
+
+    & .number_item {
+        margin: 0 50px;
+        text-align: center;
+        color: #fff;
+
+        & h3 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        & p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .number_con {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+
+        & .number_item {
+            margin: 20px 0;
+        }
+    }
+}

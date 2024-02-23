@@ -1,0 +1,43 @@
+.skill_con {
+    height: 300px;
+    background-color: #0085FF;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+
+    & .skill_titer {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+
+    & .skill_list {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        & li {
+            margin: 0 20px;
+
+            & svg {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill_con {
+        height: auto;
+
+        & .skill_list {
+            flex-direction: column;
+            margin: 20px 0;
+
+            & li {
+                margin: 20px;
+            }
+        }
+    }
+}
